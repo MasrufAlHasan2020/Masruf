@@ -6,9 +6,14 @@
     <title>Document</title>
     <link rel="icon" href="./Images/favicon.ico" type="image/x-icon" />
     <style>
+      body {
+        background-color: rgb(88, 134, 194);
+        color: white;
+      }
       table {
         border-collapse: collapse;
         width: 100%;
+        margin-bottom: 15px;
       }
       table,
       tr,
@@ -24,6 +29,20 @@
       th,
       td {
         padding: 10px;
+      }
+      .mozila {
+        background-color: rgb(241, 134, 115);
+        padding: 2px;
+        margin-bottom: 10px;
+      }
+      .special {
+        color: aliceblue;
+      }
+      #id-with-header {
+        background-color: blueviolet;
+      }
+      .mozila {
+        border-radius: 1rem;
       }
     </style>
   </head>
@@ -155,6 +174,183 @@
         </tr>
       </table>
     </div>
-    
+    <section>
+      <article class="mozila">
+        <h1>Google Chrome</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quis
+        in veritatis beatae illo suscipit nesciunt ex voluptatibus dolor..
+      </article>
+      <article class="mozila special">
+        <h1>Mozila Firefox</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
+          maiores cupiditate quaerat voluptatibus reprehenderit error, inventore
+          accusamus consectetur quibusdam rerum fugit laborum vero eum nisi
+          nobis deserunt illum soluta earum!
+        </p>
+      </article>
+      <article class="mozila">
+        <header>
+          <h1 id="id-with-header">A header for an article</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+            perferendis fugiat, quisquam non deserunt aspernatur hic quibusdam
+            consequuntur explicabo libero architecto et unde, atque perspiciatis
+            voluptatum vitae nesciunt eum esse.
+          </p>
+        </header>
+      </article>
+    </section>
+    <section>
+      <footer>
+        <p>Masruf's Youtube Link</p>
+        <p>
+          <a href="https://www.youtube.com/@MasrufRanaMueen">
+            Masruf Al Hasan</a
+          >
+        </p>
+      </footer>
+    </section>
+    <!--A set of navigation links-->
+    <nav>
+      <a href="/html/">HTML</a> | <a href="/css/">CSS</a> |
+      <a href="/js/">JavaScript</a> |
+      <a href="/jquery/">jQuery</a>
+    </nav>
+    <!--HTML Fonm-->
+    <section>
+      <form class="user-form" action="./index.htm">
+        <fieldset>
+          <legend>User Information</legend>
+          <label for="fname">First name</label><br />
+          <input
+            type="text"
+            id="fname"
+            placeholder="first name"
+            required
+            value="Md. Rony"
+            autocomplete="on"
+            readonly
+          />
+          <br /><br />
+          <label for="lname">Last name</label><br />
+          <input
+            type="text"
+            id="lname"
+            placeholder="last name"
+            required
+            autocomplete="on"
+            value="Ahmed"
+            disabled
+          /><br /><br />
+          <label>Age</label><br />
+          <input type="number" placeholder="age" required /><br /><br />
+          <label for="email">Enter your email:</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email"
+          /><br /><br />
+          <label for="pwd">Password:</label><br />
+          <input
+            type="password"
+            id="pwd"
+            name="pwd"
+            placeholder="password.."
+          /><br /><br />
+          <input
+            type="radio"
+            id="html"
+            name="fav_language"
+            value="HTML"
+            required
+          />
+          <label for="html">HTML</label><br />
+          <input
+            type="radio"
+            id="css"
+            name="fav_language"
+            value="CSS"
+            required
+          />
+          <label for="css">CSS</label><br />
+          <input
+            type="radio"
+            id="javascript"
+            name="fav_language"
+            value="JavaScript"
+          />
+          <label for="javascript">JavaScript</label><br /><br />
+          <input type="checkbox" id="vehicle1" name="vehicle1" value="BIKE" />
+          <label for="vehicle1">I have a bike</label><br />
+          <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+          <label for="vehicle2">I have a car</label><br />
+          <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+          <label for="vehicle3">I have a boat</label><br /><br />
+          <label for="cars">Choose a car:</label>
+          <select id="car's" name="car's" size="2" multiple>
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option></select
+          ><br /><br />
+          <textarea cols="30" rows="10">Description:</textarea><br />
+          <input list="browsers" />
+          <datalist id="browsers">
+            <option value="Edge"></option>
+            <option value="Firefox"></option>
+            <option value="Chrome"></option>
+            <option value="Opera"></option>
+            <option value="Safari"></option></datalist
+          ><br /><br />
+          <label for="favcolor">Select your favourite color :</label>
+          <input type="color" id="favcolor" name="favcolor" /><br /><br />
+          <label for="birthday">Birthday</label>
+          <input type="date" id="birthday" name="birthday" /><br /><br />
+          <label for="myfile">Select a file:</label>
+          <input type="file" id="myfile" name="myfile" /><br /><br />
+          <label for="quantity">Quantity:</label>
+          <input
+            type="number"
+            id="quantity"
+            name="quantity"
+            min="0"
+            max="100"
+            step="10"
+            value="30"
+          /><br /><br />
+          <label for="vol">Volume (between 0 and 50):</label>
+          <input
+            type="range"
+            id="vol"
+            name="vol"
+            min="0"
+            max="50"
+          /><br /><br />
+          <label for="gsearch">Search Google:</label>
+          <input type="search" id="gsearch" name="gsearch" /><br /><br />
+          <input type="submit" value="submit" />
+          <input type="reset" value="Reset" />
+        </fieldset>
+      </form>
+    </section>
+    <br />
+    <!--Video Section-->
+    <section>
+      <video width="500px" height="250px" controls muted>
+        <source src="./Videos/big_buck_bunny_720p_1mb.mp4" type="video/mp4" />
+      </video>
+    </section>
+    <br />
+    <!--Youtube Video-->
+    <section>
+      <iframe
+        width="500px"
+        height="250px"
+        src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1"
+        frameborder="0"
+      ></iframe>
+    </section>
   </body>
 </html>
